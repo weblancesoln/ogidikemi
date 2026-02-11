@@ -77,6 +77,7 @@ function App() {
           <div className="logo">KEMI <span>MERCY</span></div>
           <div className="nav-links">
             <a href="#about">About</a>
+            <a href="#services">Services</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
             <a href="#contact" className="btn btn-outline">Let&apos;s Talk</a>
@@ -191,6 +192,117 @@ function App() {
               </motion.div>
             ))}
           </motion.div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="services-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="badge">What I Offer</span>
+            <h2 className="section-title">Tailored Solutions for Your Business</h2>
+          </div>
+          <div className="services-grid">
+            <motion.div
+              className="service-card glass-card"
+              whileHover={{ y: -10 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <div className="service-icon-wrapper">
+                <Briefcase className="service-icon" />
+              </div>
+              <h3>Executive Virtual Assistance</h3>
+              <p>Streamline your daily operations with dedicated support for email, calendar, and task management. I handle the details so you can focus on the big picture.</p>
+              <ul className="service-features">
+                <li><CheckCircle2 size={16} /> Email Management</li>
+                <li><CheckCircle2 size={16} /> Calendar Coordination</li>
+                <li><CheckCircle2 size={16} /> Travel Arrangement</li>
+              </ul>
+            </motion.div>
+
+            <motion.div
+              className="service-card glass-card highlight"
+              whileHover={{ y: -10 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+            >
+              <div className="service-icon-wrapper">
+                <Target className="service-icon" />
+              </div>
+              <h3>Business Growth Strategy</h3>
+              <p>Leveraging storytelling and data-driven insights to spark growth. I help you communicate value clearly and turn opportunities into scalable results.</p>
+              <ul className="service-features">
+                <li><CheckCircle2 size={16} /> Sales Strategy</li>
+                <li><CheckCircle2 size={16} /> Brand Storytelling</li>
+                <li><CheckCircle2 size={16} /> Market Research</li>
+              </ul>
+            </motion.div>
+
+            <motion.div
+              className="service-card glass-card"
+              whileHover={{ y: -10 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              <div className="service-icon-wrapper">
+                <Users className="service-icon" />
+              </div>
+              <h3>Customer Success Management</h3>
+              <p>Building meaningful relationships that last. I implement engagement processes that improve retention and ensure your customers stay satisfied.</p>
+              <ul className="service-features">
+                <li><CheckCircle2 size={16} /> Relationship Management</li>
+                <li><CheckCircle2 size={16} /> Retention Strategies</li>
+                <li><CheckCircle2 size={16} /> Feedback Analysis</li>
+              </ul>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="testimonials-section">
+        <div className="container">
+          <h2 className="section-title">What People Say</h2>
+          <div className="testimonials-grid">
+            <motion.div
+              className="testimonial-card glass-card"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+            >
+              <div className="quote-icon">"</div>
+              <p className="testimonial-text">Kemi's attention to detail and proactive approach saved our team hours every week. She doesn't just execute tasks; she improves the process.</p>
+              <div className="testimonial-author">
+                <div className="author-info">
+                  <strong>Sarah J.</strong>
+                  <span>Operations Director</span>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="testimonial-card glass-card"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              <div className="quote-icon">"</div>
+              <p className="testimonial-text">Her ability to blend administrative excellence with strategic thinking is rare. She has been a key driver in our recent sales growth.</p>
+              <div className="testimonial-author">
+                <div className="author-info">
+                  <strong>Michael K.</strong>
+                  <span>CEO, Tech Solutions</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
