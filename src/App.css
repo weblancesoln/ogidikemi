@@ -1,3 +1,80 @@
+/* Background Gloss & Glows */
+.bg-glow-1,
+.bg-glow-2,
+.bg-glow-3 {
+  position: fixed;
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+  opacity: 0.15;
+  pointer-events: none;
+  animation: float 20s infinite alternate;
+}
+
+.bg-glow-1 {
+  background: var(--color-primary);
+  top: -10%;
+  left: -10%;
+}
+
+.bg-glow-2 {
+  background: var(--color-secondary);
+  bottom: -10%;
+  right: -10%;
+  animation-delay: -5s;
+}
+
+.bg-glow-3 {
+  background: #ff00ff;
+  top: 40%;
+  left: 30%;
+  width: 30vw;
+  height: 30vw;
+  opacity: 0.08;
+  animation-duration: 25s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(10vw, 10vh) rotate(360deg);
+  }
+}
+
+/* Glass Card Shine Effect */
+.glass-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: -150%;
+  left: -150%;
+  width: 300%;
+  height: 300%;
+  background: linear-gradient(45deg,
+      transparent 45%,
+      rgba(255, 255, 255, 0.03) 48%,
+      rgba(255, 255, 255, 0.07) 50%,
+      rgba(255, 255, 255, 0.03) 52%,
+      transparent 55%);
+  transform: rotate(-45deg);
+  transition: all 0.5s;
+  pointer-events: none;
+}
+
+.glass-card:hover::after {
+  top: -100%;
+  left: -100%;
+}
+
 /* Navigation */
 .navbar {
   position: fixed;
@@ -21,11 +98,16 @@
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: -0.5px;
+  color: #fff;
 }
 
 .logo span {
   font-weight: 300;
-  color: var(--color-primary);
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(255, 77, 109, 0.3);
 }
 
 .nav-links {
@@ -48,7 +130,7 @@
 .hero {
   padding-top: 10rem;
   padding-bottom: 6rem;
-  background: radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 40%);
+  background: radial-gradient(circle at 80% 20%, rgba(255, 77, 109, 0.1) 0%, transparent 40%);
 }
 
 .hero-grid {
@@ -61,8 +143,8 @@
 .badge {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: rgba(212, 175, 55, 0.1);
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  background: rgba(255, 77, 109, 0.15);
+  border: 1px solid rgba(255, 77, 109, 0.3);
   border-radius: 2rem;
   color: var(--color-primary);
   font-size: 0.85rem;
@@ -200,7 +282,7 @@
 .skill-icon {
   width: 50px;
   height: 50px;
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(255, 77, 109, 0.15);
   border-radius: 1rem;
   display: flex;
   align-items: center;
@@ -394,7 +476,7 @@
 }
 
 .contact-cta-box {
-  background: rgba(212, 175, 55, 0.05);
+  background: rgba(255, 77, 109, 0.08);
   padding: 3rem;
   border-radius: 1rem;
   display: flex;

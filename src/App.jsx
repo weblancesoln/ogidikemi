@@ -68,6 +68,9 @@ function App() {
 
   return (
     <div className="portfolio">
+      <div className="bg-glow-1"></div>
+      <div className="bg-glow-2"></div>
+      <div className="bg-glow-3"></div>
       {/* Navigation */}
       <nav className="navbar">
         <div className="container nav-content">
@@ -91,7 +94,7 @@ function App() {
             transition={{ duration: 0.8 }}
           >
             <span className="badge">Multi-skilled Professional</span>
-            <h1 className="gradient-text">Driving Growth Through Storytelling & Strategy</h1>
+            <h1 className="gradient-textLarge">Driving Growth Through Storytelling & Strategy</h1>
             <p className="hero-description">
               I&apos;m <strong>Ogidi Oluwakemi Mercy</strong> — a professional blending sales, storytelling, and strategy to drive real business growth. I turn opportunities into results with professionalism and excellence.
             </p>

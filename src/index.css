@@ -2,21 +2,26 @@
   --font-main: 'Inter', sans-serif;
   --font-heading: 'Outfit', sans-serif;
 
-  --color-bg: #0a0a0c;
-  /* Very deep charcoal with a hint of wine */
-  --color-surface: #121216;
-  --color-surface-hover: #1a1a20;
-  --color-primary: #d4af37;
-  /* Metallic Gold */
-  --color-secondary: #f4e4bc;
-  /* Soft Champagne */
-  --color-text-main: #e0e0e0;
-  --color-text-muted: #a0a0a0;
-  --color-border: rgba(255, 255, 255, 0.08);
+  /* Eye Catchy Female Palette */
+  --color-bg: #0d0a0b;
+  --color-surface: #1a1216;
+  --color-surface-hover: #261b20;
+  --color-primary: #ff4d6d;
+  /* Vibrant French Rose */
+  --color-secondary: #ff8fa3;
+  /* Soft Blush */
+  --color-accent: #ffb3c1;
+  /* Pale Pink */
+  --color-text-main: #fff0f3;
+  --color-text-muted: #c9ada1;
+  --color-border: rgba(255, 77, 109, 0.15);
 
-  --glass-bg: rgba(18, 18, 22, 0.8);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-blur: blur(12px);
+  --glass-bg: rgba(26, 18, 22, 0.85);
+  --glass-border: rgba(255, 77, 109, 0.2);
+  --glass-blur: blur(16px);
+
+  --gradient-primary: linear-gradient(135deg, #ff4d6d 0%, #ff8fa3 100%);
+  --gradient-glow: radial-gradient(circle at center, rgba(255, 77, 109, 0.15) 0%, transparent 70%);
 }
 
 * {
@@ -91,13 +96,14 @@ section {
 }
 
 .btn-primary {
-  background: var(--color-primary);
-  color: #000;
+  background: var(--gradient-primary);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3);
 }
 
 .btn-primary:hover {
-  background: var(--color-secondary);
   transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 77, 109, 0.4);
 }
 
 .btn-outline {
@@ -107,12 +113,13 @@ section {
 }
 
 .btn-outline:hover {
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(255, 77, 109, 0.05);
   color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #fff 0%, var(--color-primary) 100%);
+  background: linear-gradient(135deg, #fff 0%, var(--color-secondary) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
