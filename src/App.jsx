@@ -265,46 +265,6 @@ function App() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="testimonials-section">
-        <div className="container">
-          <h2 className="section-title">What People Say</h2>
-          <div className="testimonials-grid">
-            <motion.div
-              className="testimonial-card glass-card"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-            >
-              <div className="quote-icon">"</div>
-              <p className="testimonial-text">Kemi's attention to detail and proactive approach saved our team hours every week. She doesn't just execute tasks; she improves the process.</p>
-              <div className="testimonial-author">
-                <div className="author-info">
-                  <strong>Sarah J.</strong>
-                  <span>Operations Director</span>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="testimonial-card glass-card"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-            >
-              <div className="quote-icon">"</div>
-              <p className="testimonial-text">Her ability to blend administrative excellence with strategic thinking is rare. She has been a key driver in our recent sales growth.</p>
-              <div className="testimonial-author">
-                <div className="author-info">
-                  <strong>Michael K.</strong>
-                  <span>CEO, Tech Solutions</span>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
 
       {/* Experience Section */}
       <section id="experience" className="experience-section">
@@ -355,10 +315,15 @@ function App() {
           <div className="youtube-cta">
             <div className="glass-card cta-content">
               <h2>Watch My Journey</h2>
-              <p>Explore my storytelling and media engagement through my YouTube channel.</p>
-              <a href="https://youtube.com/@big_khemz?si=ecLon9sY6IHdyi3w" target="_blank" className="btn btn-primary">
-                Visit YouTube <Youtube size={18} />
-              </a>
+              <p>Explore my storytelling and media engagement through my YouTube channel and video portfolio.</p>
+              <div className="hero-btns" style={{ justifyContent: 'center' }}>
+                <a href="https://youtube.com/@big_khemz?si=ecLon9sY6IHdyi3w" target="_blank" className="btn btn-primary">
+                  Visit YouTube <Youtube size={18} />
+                </a>
+                <a href="https://drive.google.com/drive/folders/1js1yQlwBzClCRfWpsL1th2w_2EA4GTtH?usp=sharing" target="_blank" className="btn btn-outline">
+                  View My Videos <ExternalLink size={18} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
