@@ -111,7 +111,7 @@ function App() {
             transition={{ duration: 0.8 }}
           >
             <div className="image-wrapper">
-              <img src="/profile.jpg" alt="Ogidi Oluwakemi Mercy" className="profile-img" />
+              <img src="/profile.png" alt="Ogidi Oluwakemi Mercy" className="profile-img" />
               <div className="image-accent"></div>
             </div>
           </motion.div>
@@ -320,7 +320,7 @@ function App() {
                 <a href="https://youtube.com/@big_khemz?si=ecLon9sY6IHdyi3w" target="_blank" className="btn btn-primary">
                   Visit YouTube <Youtube size={18} />
                 </a>
-                <a href="https://drive.google.com/drive/folders/1js1yQlwBzClCRfWpsL1th2w_2EA4GTtH?usp=sharing" target="_blank" className="btn btn-outline">
+                <a href="https://drive.google.com/drive/folders/1mKui4fH_pvivVfwE5CjNH4b5r75sCxZA" target="_blank" className="btn btn-outline">
                   View My Videos <ExternalLink size={18} />
                 </a>
               </div>
